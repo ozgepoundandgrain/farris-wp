@@ -82,13 +82,11 @@ h3,
   @include font-size(32px, 36px);
 
   margin-bottom: $spacer * 0.9375; // 16px * 0.9375 = 15px
-  font-family: $font-primary-bold;
 }
 
 .h3-hero {
   @include font-size(30px, 32px);
 
-  font-family: $font-primary-bold;
   color: theme-color("color-primary");
   margin-bottom: $spacer * 0.9375; // 16px * 0.9375 = 15px
 }
@@ -111,7 +109,6 @@ h5,
   @include font-size(24px, 28px);
 
   margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
-  font-family: $font-primary-bold;
 }
 
 h6,
@@ -119,7 +116,6 @@ h6,
   @include font-size(20px, 22px);
 
   margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
-  font-family: $font-primary-bold;
 }
 
 p {

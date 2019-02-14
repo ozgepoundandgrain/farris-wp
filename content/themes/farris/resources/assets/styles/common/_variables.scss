@@ -18,20 +18,10 @@ $container-max-widths: (
   xl: 1140px
 );
 
-$section-container-max-widths: (
-  sm: 580px,
-  md: 760px,
-  lg: 1000px,
-  xl: 1180px
-);
-
 $navbar-bp : md;
 
 /*  ----- FONTS ----- */
-
-$font-primary-bold : sans-serif;
-$font-primary : sans-serif;
-
+$font-primary : "Crimson Text", serif;
 $font-secondary : sans-serif;
 
 /* ----- FONT SIZING ----- */
