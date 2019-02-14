@@ -1,0 +1,154 @@
+{
+    "key": "group_5c3d93059bd09",
+    "title": "Home Page",
+    "fields": [
+        {
+            "key": "field_5c3d97230f487",
+            "label": "Page Builder",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c3d93159d1a5",
+            "label": "Page Builder",
+            "name": "page_builder",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5c3d97960f48b": {
+                    "key": "layout_5c3d97960f48b",
+                    "name": "text_module",
+                    "label": "Text Module",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c3d979b0f48c",
+                            "label": "Text Module",
+                            "name": "text_module",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c3dc157b4378"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c3d981c68082": {
+                    "key": "layout_5c3d981c68082",
+                    "name": "accordion_module",
+                    "label": "Accordion Module",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c3d982368083",
+                            "label": "Accordion Module",
+                            "name": "accordion_module",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c3dc1d1b114d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c3d9b1085d9f": {
+                    "key": "layout_5c3d9b1085d9f",
+                    "name": "news_posts",
+                    "label": "News Posts",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c3d9b1985da0",
+                            "label": "Featured News Posts",
+                            "name": "featured_news_posts",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c3d9a1a7163f"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Module",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "views\/front.blade.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1549994897
+}

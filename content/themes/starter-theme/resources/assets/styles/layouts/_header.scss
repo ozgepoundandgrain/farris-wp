@@ -1,0 +1,286 @@
+/* stylelint-disable */
+.header {
+  padding:20px 0;
+}
+.header__outer-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header__brand {
+  width: 125px;
+  display: block;
+
+  @include media-breakpoint-up($navbar-bp) {
+    width: 185px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 215px;
+  }
+  
+}
+
+.header__navbar-collapse {
+  @include media-breakpoint-up($navbar-bp) {
+    display:block !important;
+    flex-basis: initial;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @include media-breakpoint-up($navbar-bp) {
+    justify-content: flex-end;
+  }
+}
+.header__nav--primary {
+  display: block;
+  margin-top: 20px;
+  border-top: 1px solid theme-color("color-cloud");
+
+  @include media-breakpoint-up($navbar-bp) {
+    display: flex;
+    border-top: none;
+  }
+}
+
+.header__nav-wrap {
+  width:100%;
+  border-top:1px solid theme-color("color-grey-dark");
+  margin-top:20px;
+  padding-top:20px;
+
+  @include media-breakpoint-up($navbar-bp) {
+    width:auto;
+    border-top:none;
+    margin-top:0px;
+    padding-top:0px;
+  }
+}
+
+/* ----- NAV TOGGLE BTN ----- */
+.header__nav-toggler {
+  display: block;
+  padding: 10px;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  @include media-breakpoint-up($navbar-bp) {
+    display: none;
+  }
+}
+.header__nav-toggler:hover,
+.header__nav-toggler:focus {
+  outline: none;
+
+  .header__nav-toggler-bar {
+    background-color: theme-color("color-secondary");
+  }
+}
+
+.header__nav-toggler-bar {
+  width: 35px;
+  background: theme-color("color-grey");
+  height: 4px;
+  display: block;
+  margin-bottom: 6px;
+  transition: all 200ms;
+}
+.header__nav-toggler-bar--1 {
+  position: relative;
+  top: 10px;
+  transform: rotate(45deg);
+}
+.header__nav-toggler-bar--2 {
+  display: none;
+}
+.header__nav-toggler-bar--3 {
+  transform: rotate(-45deg);
+  margin-bottom: 0px;
+}
+
+/* Shouldn't be nesting like this.  Should use bootstrap events to append proper classes */
+.header__nav-toggler.collapsed {
+  .header__nav-toggler-bar--1 {
+    position: relative;
+    top:0px;
+    transform: none;
+  }
+  .header__nav-toggler-bar--2 {
+    display: block;
+  }
+  .header__nav-toggler-bar--3 {
+    transform: none;
+  }
+}
+
+/* ----- SEARCH TOGGLE ----- */
+.header__search-toggle {
+  padding: 0 10px;
+  margin: 0 0 0 10px;
+  display: none;
+
+  @include media-breakpoint-up($navbar-bp) {
+    display: block;
+  }
+}
+
+/* ----- PRIMARY NAV ( link-list ) ----- */
+.header-nav-list {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+
+  @include media-breakpoint-up($navbar-bp) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* Top level items */
+.header-nav-list__item {
+  display: block;
+  margin:0px;
+  border-bottom: 1px solid theme-color("color-cloud");
+
+  @include media-breakpoint-up($navbar-bp) {
+    display: inline-block;
+    margin:0px;
+    border:none;
+  }
+}
+.header-nav-list__item:after {
+  content: "";
+
+  @include media-breakpoint-up($navbar-bp) {
+    content: "|";
+  }
+}
+
+/* Specific item (where x = post_id) */
+.header-nav-list__item--x {}
+
+/* Active page item */
+.header-nav-list__item--active {}
+
+/* Parent of the current active page */
+.header-nav-list__item--parent--active {}
+
+/* Ancestor of the current active page */
+.header-nav-list__item--ancestor--active {}
+
+/* Link */
+.header-nav-list__link {
+  display: block;
+  color: theme-color("color-grey-dark");
+  padding:20px;
+  margin: 0px;
+  width: 100%;
+  text-transform: uppercase;
+  @include font-size(24px, 24px);
+
+  @include media-breakpoint-up($navbar-bp) {
+    @include font-size(16px, 16px);
+    float: left;
+    width: auto;
+    text-align: left;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+}
+
+.header-nav-list__link:hover,
+.header-nav-list__link:focus {
+  color: theme-color("color-secondary");
+  text-decoration: none;
+  outline: none;
+  border-left: 4px solid theme-color("color-secondary");
+  padding-left: 16px;
+
+  @include media-breakpoint-up($navbar-bp) {
+    border: none;
+    padding-left:10px;
+  }
+}
+
+/* Last link-list__link */
+.header-nav-list__link:last-child {
+  margin-right:0px;
+}
+
+/* ----- SECONDARY NAV ( button-list ) ----- */
+
+.button-list {
+  padding: 0px;
+  list-style: none;
+  margin:0px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include media-breakpoint-up($navbar-bp) {
+    width: auto;
+    flex-wrap: initial;
+  }
+}
+
+/* Top level items */
+.button-list__item {
+  display: block;
+  width: 100%;
+  margin: 0 0 10px 0;
+
+  @include media-breakpoint-up(xs) {
+    width: 49%;
+    margin: 0px;
+  }
+
+  @include media-breakpoint-up($navbar-bp) {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+.button-list__item--inverted {
+  a {
+    @extend .btn-link--inverted;
+  }
+}
+
+/* Specific item (where x = post_id) */
+.button-list__item--x {}
+
+/* Active page item */
+.button-list__item--active {}
+
+/* Parent of the current active page */
+.button-list__item--parent--active {}
+
+/* Ancestor of the current active page */
+.button-list__item--ancestor--active {}
+
+/* Link */
+.button-list__link {
+  @extend .btn-link;
+  display: block;
+  
+  text-align: center;
+
+  @include media-breakpoint-up($navbar-bp) {
+    margin:0 2px;
+  }
+}
+
+/* Last Link */
+.button-list li:last-child {
+  .button-list__link {
+    margin-right: 0px;
+  }
+}

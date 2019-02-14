@@ -1,0 +1,109 @@
+/** Form CSS */
+form ul {
+  list-style: none;
+  padding: 0;
+}
+
+form ul li {
+  padding: 10px 0 0;
+}
+
+form label {
+  @include font-size(16px, 24px);
+
+  font-family: $font-primary-bold;
+}
+
+/** Form Fields */
+input {
+  min-height: 40px;
+  padding: 0 10px;
+}
+
+input[type=submit] {
+  @extend .btn-link;
+
+  cursor: pointer;
+}
+
+input[type=submit]:hover,
+input[type=submit]:focus {
+  text-decoration: none;
+  background-color: theme-color("color-primary-bright");
+  border: 2px solid theme-color("color-primary-bright");
+  color: theme-color("color-white");
+  outline: none;
+}
+
+input[type=text] {
+  width: 96%;
+}
+
+input[type=email] {
+  width: 96%;
+}
+
+textarea {
+  width: 96%;
+  padding: 10px;
+}
+
+input,
+textarea,
+select {
+  background-color: theme-color("color-white");
+  border-color: theme-color("color-grey-dark");
+  border-width: 1px;
+}
+
+/** Gravity Forms Specific **/
+.gfield_required {
+  color: theme-color("color-secondary-bright");
+  padding-left: 5px;
+}
+
+.gf_half {
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: 49%;
+    float: left;
+  }
+}
+
+.ginput_counter {
+  display: none;
+}
+
+/** Validation Error */
+.validation_error {
+  @extend .alert;
+  @extend .alert-danger;
+}
+
+.validation_message {
+  margin-top: 5px;
+  color: theme-color("danger");
+
+  @include font-size(14px, 21px);
+}
+
+/** Search form */
+.search-form {
+  @extend .form-inline;
+}
+
+.search-form label {
+  @extend .form-group;
+
+  font-weight: normal;
+}
+
+.search-form .search-field {
+  @extend .form-control;
+}
+
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}

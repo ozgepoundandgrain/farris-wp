@@ -1,0 +1,244 @@
+/* ----- LINKS ----- */
+a {
+  color: theme-color("color-secondary");
+}
+
+a:hover {
+  color: theme-color("color-secondary-bright");
+}
+
+/* ----- HEADINGS ----- */
+
+%heading-style {
+  font-family: $font-secondary;
+  margin-top: 0;
+  color: theme-color("color-grey-dark");
+  font-weight: 800;
+  //margin-bottom: $spacer * 1.875; // 16px * 1.875 = 30px
+}
+
+/**
+ * HEADINGS
+ */
+/* stylelint-disable */
+h1,
+.alpha,
+h2,
+.bravo,
+h3,
+.charlie,
+h4,
+.delta,
+h5,
+.echo,
+h6,
+.foxtrot {
+  @extend %heading-style;
+
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+}
+/* stylelint-enable */
+
+h1,
+.alpha {
+  @include font-size(55px, 50px);
+
+  font-family: $font-secondary;
+  margin-bottom: $spacer * 1.5; // 16px * 1.5 = 24px
+  color: theme-color("color-grey-dark");
+  text-transform: uppercase;
+
+  /* Small devices (tablets, 768px and up) */
+  @include media-breakpoint-up(md) {
+    @include font-size(60px, 55px);
+  }
+}
+
+h2,
+.bravo {
+  @include font-size(50px, 45px);
+
+  font-family: $font-secondary;
+  margin-bottom: $spacer * 0.9375; // 16px * 0.9375 = 15px
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    @include font-size(55px, 50px);
+  }
+}
+
+.alpha--secondary,
+.bravo--secondary,
+.charlie--secondary,
+.delta--secondary {
+  color: theme-color("color-primary");
+}
+
+h3,
+.charlie {
+  @include font-size(32px, 36px);
+
+  margin-bottom: $spacer * 0.9375; // 16px * 0.9375 = 15px
+  font-family: $font-primary-bold;
+}
+
+.h3-hero {
+  @include font-size(30px, 32px);
+
+  font-family: $font-primary-bold;
+  color: theme-color("color-primary");
+  margin-bottom: $spacer * 0.9375; // 16px * 0.9375 = 15px
+}
+
+h4,
+.delta {
+  @include font-size(20px, 18px);
+
+  margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
+  font-family: $font-primary;
+  font-weight: normal;
+
+  @include media-breakpoint-up(md) {
+    @include font-size(22px, 20px);
+  }
+}
+
+h5,
+.echo {
+  @include font-size(24px, 28px);
+
+  margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
+  font-family: $font-primary-bold;
+}
+
+h6,
+.foxtrot {
+  @include font-size(20px, 22px);
+
+  margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
+  font-family: $font-primary-bold;
+}
+
+p {
+  @include font-size(16px, 24px);
+
+  font-family: $font-primary;
+  color: theme-color("color-grey-dark");
+  margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
+}
+
+.p-hero {
+  @include font-size(24px, 30px);
+
+  display: block;
+  margin-bottom: $spacer * 1.5; // 16px * 1.5 = 24px
+  font-family: $font-primary;
+  color: theme-color("color-grey-dark");
+}
+
+.chevron-link {
+  color: theme-color("color-secondary");
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.chevron-link::after {
+  content: url("data:image/svg+xml;charset=UTF-8, <svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='9' height='28' viewBox='0 0 9 28'><title>angle-right</title><path fill='#3b3b3d' d='M9.297 15c0 0.125-0.063 0.266-0.156 0.359l-7.281 7.281c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-0.781-0.781c-0.094-0.094-0.156-0.219-0.156-0.359 0-0.125 0.063-0.266 0.156-0.359l6.141-6.141-6.141-6.141c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l0.781-0.781c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l7.281 7.281c0.094 0.094 0.156 0.234 0.156 0.359z'></path></svg>");
+  vertical-align: middle;
+  padding-left: 1em;
+  display: inline-block;
+  transition: padding-left 200ms;
+}
+
+.chevron-link:hover {
+  text-decoration: none;
+
+  &::after {
+    padding-left: 1.4em;
+  }
+}
+
+ul,
+ol {
+  @include font-size(16px, 24px);
+}
+
+li {
+  line-height: 1rem;
+  margin-bottom: $spacer * 1; // 16px * 1 = 16px
+}
+
+li > ul,
+li > ol {
+  margin-top: $spacer * 1; // 16px * 1 = 16px
+}
+
+blockquote {
+  border-left: 5px solid theme-color("color-secondary-bright");
+  margin: 40px 100px;
+  padding: 0 0 0 30px;
+  color: theme-color("color-grey-dark");
+  text-align: justify;
+}
+
+blockquote p {
+  display: inline;
+}
+
+.alert {
+  border-radius: 0;
+  padding: 1.5rem;
+
+  @include font-size(14px,22px);
+}
+
+.alert-primary {
+  border: 0 none;
+  background-color: theme-color("color-cloud");
+  color: theme-color("color-grey-dark");
+}
+
+.alert-secondary {
+  border: 1px solid theme-color("color-grey-dark");
+  background-color: theme-color("color-white");
+  color: theme-color("color-grey-dark");
+}
+
+.alert-success {
+  border: 0 none;
+  //background-color: theme-color("color-secondary");
+  //color: theme-color("color-white");
+}
+
+.alert-danger {
+  border: 0 none;
+  //background-color: theme-color("color-primary");
+  //color: theme-color("color-grey-dark");
+}
+
+.alert-warning {
+  border: 0 none;
+  //background-color: theme-color("color-primary-bright");
+  //color: theme-color("color-grey-dark");
+}
+
+.alert-info {
+  border: 0 none;
+  //background-color: theme-color("color-secondary-bright");
+  //color: theme-color("color-white");
+}
+
+.alert-light {
+  border: 0 none;
+  background-color: theme-color("color-cloud");
+  color: theme-color("color-grey-dark");
+}
+
+.alert-dark {
+  border: 0 none;
+  background-color: theme-color("color-grey-dark");
+  color: theme-color("color-white");
+}

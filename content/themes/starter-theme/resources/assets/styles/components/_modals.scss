@@ -1,0 +1,57 @@
+.modal-backdrop.show {
+  opacity: 0.95;
+  background: #fff;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+  background: transparent;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  padding: 40px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-title {
+  width: 100%;
+  text-align: center;
+}
+
+.search-form label {
+  font-weight: normal;
+  width: 100%;
+  margin-bottom: 10px;
+
+  @include media-breakpoint-up(md) {
+    width: 70%;
+    margin-bottom: 0;
+  }
+}
+
+.search-form .search-field {
+  border: 1px solid theme-color("color-grey-dark");
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.search-form .search-submit {
+  @extend .btn-link;
+
+  border-radius: 0;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: 30%;
+  }
+}

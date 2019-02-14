@@ -1,0 +1,9 @@
+@function theme-color($key: "color-grey-dark") {
+  @return map-get($theme-colors, $key);
+}
+
+@function calculate-rem($size) {
+  $remSize: $size / 16px;
+
+  @return #{$remSize}rem;
+}
