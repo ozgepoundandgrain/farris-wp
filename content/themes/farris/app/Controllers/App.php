@@ -67,9 +67,7 @@ class App extends Controller
               'news_posts_heading' => get_sub_field('news_posts_heading'),
               'latest_news_posts' => get_sub_field('latest_news_posts'),
               'news_posts' => get_sub_field('news_posts'),
-              'previous_module_style' => $previous_module_style,
             ]);
-            $previous_module_style = 'transparent';
             break;
             
         }
