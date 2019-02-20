@@ -22,7 +22,9 @@ $navbar-bp : md;
 
 /*  ----- FONTS ----- */
 $font-primary : "Crimson Text", serif;
-$font-secondary : sans-serif;
+$font-secondary : "Gotham Medium";
+$font-tertiary: "Gotham Bold";
+$font-paragraph: "Gotham Book";
 
 /* ----- FONT SIZING ----- */
 
@@ -31,15 +33,16 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "color-primary": #d53d13,
-    "color-primary-bright": #fe5f1b,
-    "color-secondary": #efab1f,
-    "color-secondary-bright":#efc637,
-    "color-grey-light": #6d6e70,
-    "color-grey": #565658,
-    "color-grey-dark": #3b3b3d,
+    "color-green": #006325,
+    "color-beige": #9ea374,
+    "color-tan": #994708,
+    "color-orange": #c88a12,
+    "color-blue": #00447c,
+    "color-dark": #282828,
     "color-white": #fff,
-    "color-cloud": #f3f3f3
+    "color-cream": #f0eeea,
+    "color-coffee": #a69d91,
+    "color-lightgrey": #757575,
   ),
   $theme-colors
 );

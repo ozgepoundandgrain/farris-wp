@@ -12,6 +12,9 @@ use Roots\Sage\Template\BladeProvider;
  */
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('crimsontext/font', 'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i', false, null);
+    wp_enqueue_style('gothammedium/font', 'https://www.dropbox.com/sh/x9aobrwxnn78xvc/AAD1qCRYNL41L7S34-UiJe0_a/Gotham?dl=0&preview=GothamMedium.otf&subfolder_nav_tracking=1', false, null);
+    wp_enqueue_style('gothambold/font', 'https://www.dropbox.com/sh/jcxkhtgh8x9mgcq/AADjO0oLWtUt2M38bisVDsSEa/Fonts/Gotham?dl=0&preview=Gotham-Bold.otf&subfolder_nav_tracking=1', false, null);
+    wp_enqueue_style('gothambook/font', 'https://www.dropbox.com/sh/jcxkhtgh8x9mgcq/AADjO0oLWtUt2M38bisVDsSEa/Fonts/Gotham?dl=0&preview=Gotham-Book.otf&subfolder_nav_tracking=1', false, null);
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 

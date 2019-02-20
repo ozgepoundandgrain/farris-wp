@@ -10,7 +10,7 @@ a:hover {
 /* ----- HEADINGS ----- */
 
 %heading-style {
-  font-family: $font-secondary;
+  font-family: $font-primary;
   margin-top: 0;
   color: theme-color("color-grey-dark");
   font-weight: 800;
@@ -22,17 +22,11 @@ a:hover {
  */
 /* stylelint-disable */
 h1,
-.alpha,
 h2,
-.bravo,
 h3,
-.charlie,
 h4,
-.delta,
 h5,
-.echo,
-h6,
-.foxtrot {
+h6 {
   @extend %heading-style;
 
   a,
@@ -42,11 +36,10 @@ h6,
 }
 /* stylelint-enable */
 
-h1,
-.alpha {
-  @include font-size(55px, 50px);
+h1 {
+  @include font-size(72px, 80px);
 
-  font-family: $font-secondary;
+  font-family: $font-primary;
   margin-bottom: $spacer * 1.5; // 16px * 1.5 = 24px
   color: theme-color("color-grey-dark");
   text-transform: uppercase;
@@ -57,11 +50,10 @@ h1,
   }
 }
 
-h2,
-.bravo {
-  @include font-size(50px, 45px);
+h2 {
+  @include font-size(55px, 70px);
 
-  font-family: $font-secondary;
+  font-family: $font-primary;
   margin-bottom: $spacer * 0.9375; // 16px * 0.9375 = 15px
   text-transform: uppercase;
 
@@ -77,23 +69,21 @@ h2,
   color: theme-color("color-primary");
 }
 
-h3,
-.charlie {
-  @include font-size(32px, 36px);
+h3 {
+  @include font-size(44px, 48px);
 
   margin-bottom: $spacer * 0.9375; // 16px * 0.9375 = 15px
 }
 
 .h3-hero {
-  @include font-size(30px, 32px);
+  @include font-size(44px, 48px);
 
   color: theme-color("color-primary");
   margin-bottom: $spacer * 0.9375; // 16px * 0.9375 = 15px
 }
 
-h4,
-.delta {
-  @include font-size(20px, 18px);
+h4 {
+  @include font-size(30px, 36px);
 
   margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
   font-family: $font-primary;
@@ -104,24 +94,39 @@ h4,
   }
 }
 
-h5,
-.echo {
-  @include font-size(24px, 28px);
+h4 .subtitle {
+  font-family: $font-tertiary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @include font-size(15px, 24px);
+}
+
+h5 {
+  @include font-size(24px, 25px);
 
   margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
 }
 
-h6,
-.foxtrot {
-  @include font-size(20px, 22px);
+h6 {
+  @include font-size(18px, 30px);
 
+  font-family: $font-secondary;
   margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
 }
 
 p {
-  @include font-size(16px, 24px);
+  @include font-size(13px, 18px);
 
-  font-family: $font-primary;
+  font-family: $font-paragraph;
+  color: theme-color("color-grey-dark");
+  margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
+}
+
+p .small {
+  @include font-size(15px, 24px);
+
+  font-family: $font-secondary;
   color: theme-color("color-grey-dark");
   margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
 }

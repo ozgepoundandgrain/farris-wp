@@ -1,0 +1,18 @@
+.container__text {
+  font-size: 24px;
+  color: theme-color("color-grey-dark");
+  text-align: center;
+}
+
+.container__title {
+  font-size: 78px;
+  color: theme-color("color-green");
+  text-align: center;
+}
+
+.container__link {
+  font-size: 20px;
+  color: theme-color("color-green");
+  font-weight: bold;
+  text-align: center;
+}

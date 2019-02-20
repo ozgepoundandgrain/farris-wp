@@ -5,8 +5,5 @@
 @mixin font-size($size, $line-height: false) {
   font-size: $size; //Fallback in px
   font-size: calculate-rem($size);
-
-  @if $line-height {
-    line-height: $line-height / $size;
-  }
+  line-height: $line-height;
 }
