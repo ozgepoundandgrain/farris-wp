@@ -1,0 +1,39 @@
+.profile__card {
+  background: theme-color("color-white");
+
+  @include media-breakpoint-up(lg) {
+    height: 420px;
+    width: 350px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 188px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.profile__card-photo {
+  @include media-breakpoint-down(sm) {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.profile__card-text {
+  border: 1px solid theme-color("color-coffee");
+  padding: 30px 23px;
+
+  @include media-breakpoint-up(md) {
+    border-top: none;
+  }
+
+  @include media-breakpoint-down(sm) {
+    border-left: none;
+  }
+}
+
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
+}

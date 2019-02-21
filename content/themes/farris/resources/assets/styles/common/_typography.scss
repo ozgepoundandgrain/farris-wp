@@ -12,7 +12,7 @@ a:hover {
 %heading-style {
   font-family: $font-primary;
   margin-top: 0;
-  color: theme-color("color-grey-dark");
+  // color: theme-color("color-green");
   font-weight: 800;
   //margin-bottom: $spacer * 1.875; // 16px * 1.875 = 30px
 }
@@ -62,13 +62,6 @@ h2 {
   }
 }
 
-.alpha--secondary,
-.bravo--secondary,
-.charlie--secondary,
-.delta--secondary {
-  color: theme-color("color-primary");
-}
-
 h3 {
   @include font-size(44px, 48px);
 
@@ -113,6 +106,10 @@ h6 {
 
   font-family: $font-secondary;
   margin-bottom: $spacer * 0.625; // 16px * 0.625 = 10px
+}
+
+.green {
+  color: theme-color("color-green");
 }
 
 p {

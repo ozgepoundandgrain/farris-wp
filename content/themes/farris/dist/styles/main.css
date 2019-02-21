@@ -18242,7 +18242,7 @@ h2 {
   }
 }
 
-/* line 72, resources/assets/styles/common/_typography.scss */
+/* line 65, resources/assets/styles/common/_typography.scss */
 
 h3 {
   font-size: 44px;
@@ -18251,7 +18251,7 @@ h3 {
   margin-bottom: 0.9375rem;
 }
 
-/* line 78, resources/assets/styles/common/_typography.scss */
+/* line 71, resources/assets/styles/common/_typography.scss */
 
 .h3-hero {
   font-size: 44px;
@@ -18260,7 +18260,7 @@ h3 {
   margin-bottom: 0.9375rem;
 }
 
-/* line 85, resources/assets/styles/common/_typography.scss */
+/* line 78, resources/assets/styles/common/_typography.scss */
 
 h4 {
   font-size: 30px;
@@ -18272,7 +18272,7 @@ h4 {
 }
 
 @media (min-width: 768px) {
-  /* line 85, resources/assets/styles/common/_typography.scss */
+  /* line 78, resources/assets/styles/common/_typography.scss */
 
   h4 {
     font-size: 22px;
@@ -18281,7 +18281,7 @@ h4 {
   }
 }
 
-/* line 97, resources/assets/styles/common/_typography.scss */
+/* line 90, resources/assets/styles/common/_typography.scss */
 
 h4 .subtitle {
   font-family: "Gotham Bold";
@@ -18292,7 +18292,7 @@ h4 .subtitle {
   line-height: 24px;
 }
 
-/* line 105, resources/assets/styles/common/_typography.scss */
+/* line 98, resources/assets/styles/common/_typography.scss */
 
 h5 {
   font-size: 24px;
@@ -18301,7 +18301,7 @@ h5 {
   margin-bottom: 0.625rem;
 }
 
-/* line 111, resources/assets/styles/common/_typography.scss */
+/* line 104, resources/assets/styles/common/_typography.scss */
 
 h6 {
   font-size: 18px;
@@ -18311,7 +18311,13 @@ h6 {
   margin-bottom: 0.625rem;
 }
 
-/* line 118, resources/assets/styles/common/_typography.scss */
+/* line 111, resources/assets/styles/common/_typography.scss */
+
+.green {
+  color: #006325;
+}
+
+/* line 115, resources/assets/styles/common/_typography.scss */
 
 p {
   font-size: 13px;
@@ -18321,7 +18327,7 @@ p {
   margin-bottom: 0.625rem;
 }
 
-/* line 126, resources/assets/styles/common/_typography.scss */
+/* line 123, resources/assets/styles/common/_typography.scss */
 
 p .small {
   font-size: 15px;
@@ -18331,7 +18337,7 @@ p .small {
   margin-bottom: 0.625rem;
 }
 
-/* line 134, resources/assets/styles/common/_typography.scss */
+/* line 131, resources/assets/styles/common/_typography.scss */
 
 .p-hero {
   font-size: 24px;
@@ -18342,14 +18348,14 @@ p .small {
   font-family: "Crimson Text", serif;
 }
 
-/* line 143, resources/assets/styles/common/_typography.scss */
+/* line 140, resources/assets/styles/common/_typography.scss */
 
 .chevron-link {
   text-transform: uppercase;
   font-weight: 600;
 }
 
-/* line 149, resources/assets/styles/common/_typography.scss */
+/* line 146, resources/assets/styles/common/_typography.scss */
 
 .chevron-link::after {
   content: url("data:image/svg+xml;charset=UTF-8, <svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='9' height='28' viewBox='0 0 9 28'><title>angle-right</title><path fill='#3b3b3d' d='M9.297 15c0 0.125-0.063 0.266-0.156 0.359l-7.281 7.281c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-0.781-0.781c-0.094-0.094-0.156-0.219-0.156-0.359 0-0.125 0.063-0.266 0.156-0.359l6.141-6.141-6.141-6.141c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l0.781-0.781c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l7.281 7.281c0.094 0.094 0.156 0.234 0.156 0.359z'></path></svg>");
@@ -18361,19 +18367,19 @@ p .small {
   transition: padding-left 200ms;
 }
 
-/* line 157, resources/assets/styles/common/_typography.scss */
+/* line 154, resources/assets/styles/common/_typography.scss */
 
 .chevron-link:hover {
   text-decoration: none;
 }
 
-/* line 160, resources/assets/styles/common/_typography.scss */
+/* line 157, resources/assets/styles/common/_typography.scss */
 
 .chevron-link:hover::after {
   padding-left: 1.4em;
 }
 
-/* line 165, resources/assets/styles/common/_typography.scss */
+/* line 162, resources/assets/styles/common/_typography.scss */
 
 ul,
 ol {
@@ -18382,21 +18388,21 @@ ol {
   line-height: 24px;
 }
 
-/* line 170, resources/assets/styles/common/_typography.scss */
+/* line 167, resources/assets/styles/common/_typography.scss */
 
 li {
   line-height: 1rem;
   margin-bottom: 1rem;
 }
 
-/* line 175, resources/assets/styles/common/_typography.scss */
+/* line 172, resources/assets/styles/common/_typography.scss */
 
 li > ul,
 li > ol {
   margin-top: 1rem;
 }
 
-/* line 180, resources/assets/styles/common/_typography.scss */
+/* line 177, resources/assets/styles/common/_typography.scss */
 
 blockquote {
   border-left: 5px solid;
@@ -18405,13 +18411,13 @@ blockquote {
   text-align: justify;
 }
 
-/* line 188, resources/assets/styles/common/_typography.scss */
+/* line 185, resources/assets/styles/common/_typography.scss */
 
 blockquote p {
   display: inline;
 }
 
-/* line 192, resources/assets/styles/common/_typography.scss */
+/* line 189, resources/assets/styles/common/_typography.scss */
 
 .alert,
 .validation_error {
@@ -18422,51 +18428,51 @@ blockquote p {
   line-height: 22px;
 }
 
-/* line 199, resources/assets/styles/common/_typography.scss */
+/* line 196, resources/assets/styles/common/_typography.scss */
 
 .alert-primary {
   border: 0 none;
 }
 
-/* line 205, resources/assets/styles/common/_typography.scss */
+/* line 202, resources/assets/styles/common/_typography.scss */
 
 .alert-secondary {
   border: 1px solid;
   background-color: #fff;
 }
 
-/* line 211, resources/assets/styles/common/_typography.scss */
+/* line 208, resources/assets/styles/common/_typography.scss */
 
 .alert-success {
   border: 0 none;
 }
 
-/* line 217, resources/assets/styles/common/_typography.scss */
+/* line 214, resources/assets/styles/common/_typography.scss */
 
 .alert-danger,
 .validation_error {
   border: 0 none;
 }
 
-/* line 223, resources/assets/styles/common/_typography.scss */
+/* line 220, resources/assets/styles/common/_typography.scss */
 
 .alert-warning {
   border: 0 none;
 }
 
-/* line 229, resources/assets/styles/common/_typography.scss */
+/* line 226, resources/assets/styles/common/_typography.scss */
 
 .alert-info {
   border: 0 none;
 }
 
-/* line 235, resources/assets/styles/common/_typography.scss */
+/* line 232, resources/assets/styles/common/_typography.scss */
 
 .alert-light {
   border: 0 none;
 }
 
-/* line 241, resources/assets/styles/common/_typography.scss */
+/* line 238, resources/assets/styles/common/_typography.scss */
 
 .alert-dark {
   border: 0 none;
@@ -18752,6 +18758,70 @@ select {
 
 .search-form label {
   font-weight: normal;
+}
+
+/* line 1, resources/assets/styles/components/_profiles-card.scss */
+
+.profile__card {
+  background: #fff;
+}
+
+@media (min-width: 992px) {
+  /* line 1, resources/assets/styles/components/_profiles-card.scss */
+
+  .profile__card {
+    height: 420px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 1, resources/assets/styles/components/_profiles-card.scss */
+
+  .profile__card {
+    height: 188px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 16, resources/assets/styles/components/_profiles-card.scss */
+
+  .profile__card-photo {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* line 23, resources/assets/styles/components/_profiles-card.scss */
+
+.profile__card-text {
+  border: 1px solid #a69d91;
+  padding: 30px 23px;
+}
+
+@media (min-width: 768px) {
+  /* line 23, resources/assets/styles/components/_profiles-card.scss */
+
+  .profile__card-text {
+    border-top: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 23, resources/assets/styles/components/_profiles-card.scss */
+
+  .profile__card-text {
+    border-left: none;
+  }
+}
+
+/* line 36, resources/assets/styles/components/_profiles-card.scss */
+
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 /* line 1, resources/assets/styles/components/_modals.scss */
