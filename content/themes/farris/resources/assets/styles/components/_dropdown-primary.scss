@@ -1,0 +1,66 @@
+.dropdown__primary-button {
+  background: theme-color("color-white");
+  width: 260px;
+  border-radius: none;
+  border: 1px solid theme-color("color-dark");
+  // color: theme-color("color-green");
+}
+
+.icon-Dropdown-Dark::before {
+  content: "\e900";
+  color: theme-color("color-dark");
+  font-size: 0.5em;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: theme-color("color-dark");
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: theme-color("color-green");
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+label .checkbox-container.active {
+  color: theme-color("color-green");
+}

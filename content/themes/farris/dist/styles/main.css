@@ -18634,33 +18634,122 @@ input:focus[type=submit],
   list-style: none;
 }
 
-/* line 1, resources/assets/styles/components/_dropdown.scss */
+/* line 1, resources/assets/styles/components/_dropdown-primary.scss */
+
+.dropdown__primary-button {
+  background: #fff;
+  width: 260px;
+  border-radius: none;
+  border: 1px solid #282828;
+}
+
+/* line 9, resources/assets/styles/components/_dropdown-primary.scss */
+
+.icon-Dropdown-Dark::before {
+  content: "\E900";
+  color: #282828;
+  font-size: 0.5em;
+}
+
+/* line 15, resources/assets/styles/components/_dropdown-primary.scss */
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #282828;
+}
+
+/* Hide the browser's default checkbox */
+
+/* line 30, resources/assets/styles/components/_dropdown-primary.scss */
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+
+/* line 39, resources/assets/styles/components/_dropdown-primary.scss */
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+
+/* line 48, resources/assets/styles/components/_dropdown-primary.scss */
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+/* line 53, resources/assets/styles/components/_dropdown-primary.scss */
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #006325;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+/* line 58, resources/assets/styles/components/_dropdown-primary.scss */
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* line 64, resources/assets/styles/components/_dropdown-primary.scss */
+
+label .checkbox-container.active {
+  color: #006325;
+}
+
+/* line 1, resources/assets/styles/components/_dropdown-secondary.scss */
 
 .dropdown-menu {
   color: #282828;
 }
 
-/* line 5, resources/assets/styles/components/_dropdown.scss */
+/* line 5, resources/assets/styles/components/_dropdown-secondary.scss */
 
 .dropdown__button {
   background: #006325;
   width: 260px;
   border-radius: none;
+  color: #fff;
 }
 
-/* line 11, resources/assets/styles/components/_dropdown.scss */
+/* line 12, resources/assets/styles/components/_dropdown-secondary.scss */
 
 .btn,
 .comment-form input[type="submit"],
 .search-form .search-submit {
   border-radius: 0;
   text-transform: uppercase;
-  color: #fff;
   font-family: "Gotham Book";
   font-size: 15px;
 }
 
-/* line 19, resources/assets/styles/components/_dropdown.scss */
+/* line 19, resources/assets/styles/components/_dropdown-secondary.scss */
 
 .btn:focus,
 .comment-form input:focus[type="submit"],
@@ -18673,7 +18762,7 @@ input:focus[type=submit],
           box-shadow: none;
 }
 
-/* line 25, resources/assets/styles/components/_dropdown.scss */
+/* line 25, resources/assets/styles/components/_dropdown-secondary.scss */
 
 .icon-Dropdown-White::before {
   content: "\E900";
@@ -18681,7 +18770,7 @@ input:focus[type=submit],
   font-size: 0.5em;
 }
 
-/* line 31, resources/assets/styles/components/_dropdown.scss */
+/* line 31, resources/assets/styles/components/_dropdown-secondary.scss */
 
 .dropdown .show {
   width: 260px;
@@ -18694,19 +18783,19 @@ input:focus[type=submit],
   overflow-x: hidden;
 }
 
-/* line 42, resources/assets/styles/components/_dropdown.scss */
+/* line 42, resources/assets/styles/components/_dropdown-secondary.scss */
 
 .dropdown__item-green {
   color: #006325;
 }
 
-/* line 46, resources/assets/styles/components/_dropdown.scss */
+/* line 46, resources/assets/styles/components/_dropdown-secondary.scss */
 
 li .dropdown__item-green.active {
   font-weight: bold;
 }
 
-/* line 50, resources/assets/styles/components/_dropdown.scss */
+/* line 50, resources/assets/styles/components/_dropdown-secondary.scss */
 
 button:focus {
   outline: 0 !important;

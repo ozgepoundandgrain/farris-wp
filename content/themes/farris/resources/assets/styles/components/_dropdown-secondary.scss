@@ -6,12 +6,12 @@
   background: theme-color("color-green");
   width: 260px;
   border-radius: none;
+  color: theme-color("color-white");
 }
 
 .btn {
   border-radius: 0;
   text-transform: uppercase;
-  color: theme-color("color-white");
   font-family: $font-paragraph;
   font-size: 15px;
 }
