@@ -1,0 +1,18 @@
+.news-card__vertical-line {
+  border-left: 20px solid green;
+  height: auto;
+}
+
+.news__card-date {
+  color: theme-color("color-lightgrey");
+  font-weight: bold;
+}
+
+.news-card__container {
+  border-bottom: 1px solid theme-color("color-coffee");
+  padding: 20px 0;
+}
+
+.news-card__text {
+  padding: 20px 0;
+}

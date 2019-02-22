@@ -1,14 +1,14 @@
-.news__card-container {
+.news__block-container {
   height: 390px;
   display: flex;
   align-items: center;
 }
 
-.news__card-date {
+.news__block-date {
   color: theme-color("color-lightgrey");
 }
 
-.news__card-text {
+.news__block-text {
   padding: 50px;
 
   @include media-breakpoint-down(sm) {
@@ -17,18 +17,18 @@
   }
 }
 
-.news__card-subheading {
+.news__block-subheading {
   @include media-breakpoint-down(sm) {
     font-weight: bold;
   }
 }
 
-.news__card-image {
+.news__block-image {
   height: 390px;
   overflow: hidden;
 }
 
-.news__card-image img {
+.news__block-image img {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;

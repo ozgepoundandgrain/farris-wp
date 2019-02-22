@@ -18801,9 +18801,36 @@ button:focus {
   outline: 0 !important;
 }
 
+/* line 1, resources/assets/styles/components/_news-card.scss */
+
+.news-card__vertical-line {
+  border-left: 20px solid green;
+  height: auto;
+}
+
+/* line 6, resources/assets/styles/components/_news-card.scss */
+
+.news__card-date {
+  color: #757575;
+  font-weight: bold;
+}
+
+/* line 11, resources/assets/styles/components/_news-card.scss */
+
+.news-card__container {
+  border-bottom: 1px solid #a69d91;
+  padding: 20px 0;
+}
+
+/* line 16, resources/assets/styles/components/_news-card.scss */
+
+.news-card__text {
+  padding: 20px 0;
+}
+
 /* line 1, resources/assets/styles/components/_news-block.scss */
 
-.news__card-container {
+.news__block-container {
   height: 390px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18815,20 +18842,20 @@ button:focus {
 
 /* line 7, resources/assets/styles/components/_news-block.scss */
 
-.news__card-date {
+.news__block-date {
   color: #757575;
 }
 
 /* line 11, resources/assets/styles/components/_news-block.scss */
 
-.news__card-text {
+.news__block-text {
   padding: 50px;
 }
 
 @media (max-width: 767.98px) {
   /* line 11, resources/assets/styles/components/_news-block.scss */
 
-  .news__card-text {
+  .news__block-text {
     text-align: center;
     padding: 15px;
   }
@@ -18837,21 +18864,21 @@ button:focus {
 @media (max-width: 767.98px) {
   /* line 20, resources/assets/styles/components/_news-block.scss */
 
-  .news__card-subheading {
+  .news__block-subheading {
     font-weight: bold;
   }
 }
 
 /* line 26, resources/assets/styles/components/_news-block.scss */
 
-.news__card-image {
+.news__block-image {
   height: 390px;
   overflow: hidden;
 }
 
 /* line 31, resources/assets/styles/components/_news-block.scss */
 
-.news__card-image img {
+.news__block-image img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   min-width: 100%;
