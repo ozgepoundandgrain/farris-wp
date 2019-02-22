@@ -1,0 +1,36 @@
+.news__card-container {
+  height: 390px;
+  display: flex;
+  align-items: center;
+}
+
+.news__card-date {
+  color: theme-color("color-lightgrey");
+}
+
+.news__card-text {
+  padding: 50px;
+}
+
+.news__card-image {
+  height: 390px;
+  overflow: hidden;
+}
+
+.news__card-image img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.press-release {
+  color: theme-color("color-orange");
+}
+
+.news {
+  color: theme-color("color-blue");
+}
+
+.article {
+  color: theme-color("color-tan");
+}

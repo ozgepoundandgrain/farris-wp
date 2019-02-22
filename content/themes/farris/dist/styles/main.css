@@ -18801,6 +18801,46 @@ button:focus {
   outline: 0 !important;
 }
 
+/* line 1, resources/assets/styles/components/_news-block.scss */
+
+.news__card-container {
+  height: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 7, resources/assets/styles/components/_news-block.scss */
+
+.news__card-date {
+  color: #757575;
+}
+
+/* line 11, resources/assets/styles/components/_news-block.scss */
+
+.news__card-text {
+  padding: 50px;
+}
+
+/* line 15, resources/assets/styles/components/_news-block.scss */
+
+.news__card-image {
+  height: 390px;
+  overflow: hidden;
+}
+
+/* line 20, resources/assets/styles/components/_news-block.scss */
+
+.news__card-image img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 /** Form CSS */
 
 /* line 2, resources/assets/styles/components/_forms.scss */
