@@ -3,15 +3,6 @@
     $('.dropdown-menu').on('click', function(e) {
       e.stopPropagation();
     });
-
-    $(".checkbox-container").on("click", function() {
-      var me = $(this);
-      if (me.hasClass('active')) {
-        me.removeClass('active');
-      } else {
-        me.addClass('active');
-      }
-    });
   });
 </script>
 
@@ -32,39 +23,39 @@
     </button>
     <ul class="dropdown-menu" aria-labelledby="dLabel">
       <label class="checkbox-container">
-        <input type="checkbox">
-        <span class="checkmark"></span>
-        <p>Two</p>
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <p class="label">TWO</p>
       </label>
       <label class="checkbox-container">
         <input type="checkbox">
         <span class="checkmark"></span>
-        <p>Two</p>
+        <p class="label">TWO</p>
       </label>
       <label class="checkbox-container">
         <input type="checkbox">
         <span class="checkmark"></span>
-        <p>Two</p>
+        <p class="label">TWO</p>
       </label>
       <label class="checkbox-container">
         <input type="checkbox">
         <span class="checkmark"></span>
-        <p>Two</p>
+        <p class="label">TWO</p>
       </label>
       <label class="checkbox-container">
         <input type="checkbox">
         <span class="checkmark"></span>
-        <p>Two</p>
+        <p class="label">TWO</p>
       </label>
       <label class="checkbox-container">
         <input type="checkbox">
         <span class="checkmark"></span>
-        <p>Two</p>
+        <p class="label">TWO</p>
       </label>
       <label class="checkbox-container">
         <input type="checkbox">
         <span class="checkmark"></span>
-        <p>Two</p>
+        <p class="label">TWO</p>
       </label>
     </ul>
   </div>

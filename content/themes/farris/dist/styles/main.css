@@ -18643,7 +18643,7 @@ input:focus[type=submit],
   border: 1px solid #282828;
 }
 
-/* line 9, resources/assets/styles/components/_dropdown-primary.scss */
+/* line 8, resources/assets/styles/components/_dropdown-primary.scss */
 
 .icon-Dropdown-Dark::before {
   content: "\E900";
@@ -18651,7 +18651,7 @@ input:focus[type=submit],
   font-size: 0.5em;
 }
 
-/* line 15, resources/assets/styles/components/_dropdown-primary.scss */
+/* line 14, resources/assets/styles/components/_dropdown-primary.scss */
 
 .checkbox-container {
   display: block;
@@ -18669,7 +18669,7 @@ input:focus[type=submit],
 
 /* Hide the browser's default checkbox */
 
-/* line 30, resources/assets/styles/components/_dropdown-primary.scss */
+/* line 29, resources/assets/styles/components/_dropdown-primary.scss */
 
 .checkbox-container input {
   position: absolute;
@@ -18681,7 +18681,7 @@ input:focus[type=submit],
 
 /* Create a custom checkbox */
 
-/* line 39, resources/assets/styles/components/_dropdown-primary.scss */
+/* line 38, resources/assets/styles/components/_dropdown-primary.scss */
 
 .checkmark {
   position: absolute;
@@ -18693,7 +18693,7 @@ input:focus[type=submit],
 
 /* On mouse-over, add a grey background color */
 
-/* line 48, resources/assets/styles/components/_dropdown-primary.scss */
+/* line 47, resources/assets/styles/components/_dropdown-primary.scss */
 
 .checkbox-container:hover input ~ .checkmark {
   background-color: #ccc;
@@ -18701,26 +18701,26 @@ input:focus[type=submit],
 
 /* When the checkbox is checked, add a blue background */
 
-/* line 53, resources/assets/styles/components/_dropdown-primary.scss */
+/* line 52, resources/assets/styles/components/_dropdown-primary.scss */
 
 .checkbox-container input:checked ~ .checkmark {
   background-color: #006325;
 }
 
+/* line 56, resources/assets/styles/components/_dropdown-primary.scss */
+
+.checkbox-container input:checked ~ .label {
+  color: #006325;
+}
+
 /* Create the checkmark/indicator (hidden when not checked) */
 
-/* line 58, resources/assets/styles/components/_dropdown-primary.scss */
+/* line 61, resources/assets/styles/components/_dropdown-primary.scss */
 
 .checkmark::after {
   content: "";
   position: absolute;
   display: none;
-}
-
-/* line 64, resources/assets/styles/components/_dropdown-primary.scss */
-
-label .checkbox-container.active {
-  color: #006325;
 }
 
 /* line 1, resources/assets/styles/components/_dropdown-secondary.scss */

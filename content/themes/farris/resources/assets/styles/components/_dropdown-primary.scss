@@ -3,7 +3,6 @@
   width: 260px;
   border-radius: none;
   border: 1px solid theme-color("color-dark");
-  // color: theme-color("color-green");
 }
 
 .icon-Dropdown-Dark::before {
@@ -54,6 +53,10 @@
   background-color: theme-color("color-green");
 }
 
+.checkbox-container input:checked ~ .label {
+  color: theme-color("color-green");
+}
+
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark::after {
   content: "";
@@ -61,6 +64,6 @@
   display: none;
 }
 
-label .checkbox-container.active {
-  color: theme-color("color-green");
+.dropdown.show .icon-Dropdown-Dark {
+  // background: blue;
 }
