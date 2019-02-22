@@ -1,0 +1,52 @@
+.dropdown-menu {
+  color: theme-color("color-dark");
+}
+
+.dropdown__button {
+  background: theme-color("color-green");
+  width: 260px;
+  border-radius: none;
+}
+
+.btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  color: theme-color("color-white");
+  font-family: $font-paragraph;
+  font-size: 15px;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.icon-Dropdown-White::before {
+  content: "\e900";
+  color: theme-color("color-white");
+  font-size: 0.5em;
+}
+
+.dropdown .show {
+  width: 260px;
+  background: theme-color("color-white");
+  border-radius: 0;
+  border: 1px solid theme-color("color-coffee");
+  border-top: 0;
+  padding-left: 10px;
+  max-height: 150px;
+  overflow-x: hidden;
+}
+
+.dropdown__item-green {
+  color: theme-color("color-green");
+}
+
+li .dropdown__item-green.active {
+  font-weight: bold;
+}
+
+button:focus {
+  outline: 0 !important;
+}
