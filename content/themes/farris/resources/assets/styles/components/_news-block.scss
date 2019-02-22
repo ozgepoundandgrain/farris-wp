@@ -10,6 +10,17 @@
 
 .news__card-text {
   padding: 50px;
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+.news__card-subheading {
+  @include media-breakpoint-down(sm) {
+    font-weight: bold;
+  }
 }
 
 .news__card-image {

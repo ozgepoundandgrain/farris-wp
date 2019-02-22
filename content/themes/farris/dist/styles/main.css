@@ -18825,20 +18825,55 @@ button:focus {
   padding: 50px;
 }
 
-/* line 15, resources/assets/styles/components/_news-block.scss */
+@media (max-width: 767.98px) {
+  /* line 11, resources/assets/styles/components/_news-block.scss */
+
+  .news__card-text {
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 20, resources/assets/styles/components/_news-block.scss */
+
+  .news__card-subheading {
+    font-weight: bold;
+  }
+}
+
+/* line 26, resources/assets/styles/components/_news-block.scss */
 
 .news__card-image {
   height: 390px;
   overflow: hidden;
 }
 
-/* line 20, resources/assets/styles/components/_news-block.scss */
+/* line 31, resources/assets/styles/components/_news-block.scss */
 
 .news__card-image img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
+}
+
+/* line 37, resources/assets/styles/components/_news-block.scss */
+
+.press-release {
+  color: #c88a12;
+}
+
+/* line 41, resources/assets/styles/components/_news-block.scss */
+
+.news {
+  color: #00447c;
+}
+
+/* line 45, resources/assets/styles/components/_news-block.scss */
+
+.article {
+  color: #994708;
 }
 
 /** Form CSS */
